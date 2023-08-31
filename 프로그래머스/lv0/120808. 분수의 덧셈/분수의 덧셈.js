@@ -12,13 +12,8 @@ let gcd = (num1, num2) => {
 }
 
 function solution(numer1, denom1, numer2, denom2) {
-    let answer = [];
+    let numer = denom2 * numer1 + denom1 * numer2 // 분자
+    let denom = denom1 * denom2 // 분모
     
-    answer.push(denom2 * numer1 + denom1 * numer2) // 분자 
-    answer.push(denom1 * denom2) // 분모
-    
-    // 분자와 분모를 최대공약수로 약분
-    return answer.map((item) => {
-        return item / gcd(denom1 * denom2, denom2 * numer1 + denom1 * numer2)
-    });
+    return [numer / gcd(numer, denom), denom / gcd(numer, denom)] // 분자와 분모를 최대공약수로 약분
 }
