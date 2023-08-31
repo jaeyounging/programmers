@@ -1,3 +1,4 @@
+// 최대공약수를 구하는 함수
 let gcd = (num1, num2) => {
     let result = 1
     
@@ -12,9 +13,11 @@ let gcd = (num1, num2) => {
 
 function solution(numer1, denom1, numer2, denom2) {
     let answer = [];
-    answer.push(denom2 * numer1 + denom1 * numer2)
-    answer.push(denom1 * denom2)
     
+    answer.push(denom2 * numer1 + denom1 * numer2) // 분자 
+    answer.push(denom1 * denom2) // 분모
+    
+    // 분자와 분모를 최대공약수로 약분
     return answer.map((item) => {
         return item / gcd(denom1 * denom2, denom2 * numer1 + denom1 * numer2)
     });
