@@ -1,10 +1,10 @@
 # [level 0] 직각삼각형 출력하기 - 120823 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120823) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120823?language=javascript) 
 
 ### 성능 요약
 
-메모리: 7.4 MB, 시간: 12.69 ms
+메모리: 32.3 MB, 시간: 44.83 ms
 
 ### 구분
 
