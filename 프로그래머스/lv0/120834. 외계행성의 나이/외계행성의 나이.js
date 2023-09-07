@@ -8,7 +8,7 @@ function solution(age) {
     const age_list = age.toString().split("")
     
     return age_list.map((item) => {
-        return age_chart[parseInt(item)]
+        return age_chart[item]
     }).join("")
     
     ;
