@@ -5,3 +5,7 @@
 function solution(my_string) {  
     return [...new Set(my_string.split(""))].join("")
 }
+
+// 정답 확인 후
+// return [...new Set(my_string)].join("")
+// split() 할 필요 없음
