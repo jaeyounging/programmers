@@ -8,9 +8,7 @@ function solution(s) {
         i === "Z" ? arr.pop() : arr.push(i)
     }
     
-    let sum = arr.reduce((a, c) => {
+    return arr.reduce((a, c) => {
         return a + +c
     }, 0)
-    
-    return sum
 }
